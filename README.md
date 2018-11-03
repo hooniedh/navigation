@@ -33,7 +33,7 @@ I implemented few flavors of deep Q network and One can choose the type of netwo
 
 Pytorch is used as the machine learning library.
 
-The learning angen is created by calling createAgent function in dqn_agent.py with these parameters:
+The learning agent is created by calling createAgent function in dqn_agent.py with these parameters:
 - state_size: the numbser of states
 - action_size: the number of actions
 - seed: randome seed
