@@ -20,6 +20,7 @@ The agnet navigates the environmnet while eating yellow and blue bananas.
 This project depends on Pytorch and Unity ML agents.
 - Pytorch: https://pytorch.org/
 - Unity ML agents: https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Installation.md
+- Udacity navigation environment: https://github.com/udacity/deep-reinforcement-learning/tree/master/p1_navigation
 
 **It is important to note that the agent provided by Udacity is only compatible with Unity ML agent version 0.4.0. It can be downloaded from https://github.com/Unity-Technologies/ml-agents/releases.**
 
