@@ -7,19 +7,19 @@ I implemented few flavors of deep Q network and One can choose the type of netwo
 - Recurrent DQN (using GRU cell)
 
 The learning agent is created by calling createAgent function in dqn_agent.py with these parameters:
-- state_size: the numbser of states
+- state_size: the number of states
 - action_size: the number of actions
-- seed: randome seed
-- buffer_size: the maximumn number of elements in the replay buffer
-- batch_size: the mini batch size
+- seed: random seed
+- buffer_size: maximum number of elements in the replay buffer
+- batch_size: mini batch size
 - gamma: reward discount rate
-- tau: target network update rate. Use 1 if the target network is udpated entirely from the local network at once
-- lr: network learning rate on the adam optimizer
-- update_every: how often we learn the learning step (i.e. 4 means the learning step is excuted ever 4 action taken)
-- update_target_network_every: how often the target newtork is updated from the local network 
-- alpha: the weight to control the importance of the priority to calcuate sampling probability (0 means random sampling)
+- tau: target network update rate. Use 1 if the target network is updated entirely from the local network at once
+- lr: network learning rate on the Adam optimizer
+- update_every: how often we learn the learning step (i.e. 4 means the learning step is executed ever 4 action taken)
+- update_target_network_every: how often the target network is updated from the local network 
+- alpha: the weight to control the importance of the priority to calculate sampling probability (0 means random sampling)
 - sequence_length: if this is greater than 1, the recurrent dueling DQN is used. Use 1 for non-recurrent networks.
-- use_double_DQN: ture to use the double DQN
+- use_double_DQN: true to use the double DQN
 - use_dueling_network: true to use the dueling DQN
 
 The entry point of the training is train() function in training.py. The train function takes following parameters:
