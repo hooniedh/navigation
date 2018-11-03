@@ -27,6 +27,7 @@ The entry point of the training is train() function in training.py. The train fu
 - eps_start: the starting epsilon value for epsilon greedy algorithm
 - eps_end: minimum epsilon value
 - eps_decay: the decay rate for epsilon value per episode
-- beta_start: the starting beta value 
+- beta_start: the starting beta value for important sampling weight described in the paper (https://arxiv.org/abs/1511.05952)
+- episode_for_beta_one: the episode at which the beta value is set to 1.0
 
 For this report, I used a Recurrent Dueling Double DQN utilizing prioritized replay buffer with following hyperparameters.
