@@ -16,8 +16,13 @@ The agnet navigates the environmnet while eating yellow and blue bananas.
  
  The environment is considered as solved if the agent receives an average reward over 100 episodes of at least +13.
   
-### Jupyter notebook
-Udacity provide me with a Jupyter notebook with the information about creating and setting up the environment.
+### Getting started
+This project depends on Pytorch and Unity ML agents.
+- Pytorch: https://pytorch.org/
+- Unity ML agents: https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Installation.md
+
+**It is important to note that the agent provided by Udacity is only compatible with Unity ML agent version 0.4.0. It can be downloaded from https://github.com/Unity-Technologies/ml-agents/releases.**
+
 ### DQN implementation
 I implemented few flavors of deep Q network and One can choose the type of network through parameters while constructing the agent class. Following types of DQN are implemented
 - Original Google Deepmind DQN (https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf)
