@@ -5,6 +5,6 @@ The environment is provided by Udacity and it is made from the Unity ML agent [h
 The agnet navigates the environmnet while eating yellow and blue bananas.
 - The environment returns 37 floats as the states in each step.
 - There are four actions available to the agent
- - 0: walk forward
+  - 0: walk forward
 
 
