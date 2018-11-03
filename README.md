@@ -13,6 +13,9 @@ The agnet navigates the environmnet while eating yellow and blue bananas.
   - 1: eating a yellow banana
   - -1: eating a blue banana
   - 0: otherwise
+ 
+ The environment is considered as solved if the agent receives an average reward over 100 episodes of at least +13.
+  
 ### Jupyter notebook
 Udacity provide me with a Jupyter notebook with the information about creating and setting up the environment.
 ### DQN implementation
