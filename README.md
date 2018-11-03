@@ -15,6 +15,6 @@ The agnet navigates the environmnet while eating yellow and blue bananas.
   - 0: otherwise
 ## implementation
 I implemented few flavors of deep Q network and One can choose the type of network through parameters while constructing the agent class. Following types of DQN are implemented
-- aaa
+- Original Google Deepmind DQN https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf
 
 
