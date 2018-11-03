@@ -30,10 +30,12 @@ The entry point of the training is train() function in training.py. The train fu
 - beta_start: the starting beta value for important sampling weight described in the paper (https://arxiv.org/abs/1511.05952)
 - episode_for_beta_one: the episode at which the beta value is set to 1.0
 
+#### network architecture
 Following network parameters are used (Recurrent Dueling Double DQN with a prioritized replay buffer):
 - 1 layer of GRU layer with 256 hidden states and tanh activation function
 - value network with 128 hidden states and a Relu activation function
 - advantage network with 128 hidden states and a Relu activation function
 
-Following hyperparameters are used:
+#### hyperparameters
+
 
