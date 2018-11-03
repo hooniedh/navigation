@@ -25,6 +25,22 @@ I implemented few flavors of deep Q network and One can choose the type of netwo
 
 Pytorch is used as the machine learning library.
 
+The learning angen is created by calling createAgent function in dqn_agent.py with these parameters:
+- state_size: the numbser of states
+- action_size: the number of actions
+- seed: randome seed
+- buffer_size: the maximumn number of elements in the replay buffer
+- batch_size: the mini batch size
+- gamma: reward discount rate
+- tau: target network update rate. Use 1 if the target network is udpated entirely from the local network at once
+- lr: network learning rate on the adam optimizer
+- update_every: how often we learn the learning step (i.e. 4 means the learning step is excuted ever 4 action taken)
+- update_target_network_every: how often the target newtork is updated from the local network 
+- alpha: the weight to control the importance of the priority to calcuate sampling probability (0 means random sampling)
+- sequence_length: if this is greater than 1, the recurrent dueling DQN is used. Use 1 for non-recurrent networks.
+- use_double_DQN: ture to use the double DQN
+- use_dueling_network: true to use the dueling DQN
+
 
 
 
