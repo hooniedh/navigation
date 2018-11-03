@@ -22,12 +22,17 @@ The learning agent is created by calling createAgent function in dqn_agent.py wi
 - use_double_DQN: ture to use the double DQN
 - use_dueling_network: true to use the dueling DQN
 
-The entry point of the training is train() function in training.py. The train function take following parameters:
+The entry point of the training is train() function in training.py. The train function takes following parameters:
 - num_episodes: the number of episodes to run
 - eps_start: the starting epsilon value for epsilon greedy algorithm
 - eps_end: minimum epsilon value
 - eps_decay: the decay rate for epsilon value per episode
 - beta_start: the starting beta value for important sampling weight described in the paper (https://arxiv.org/abs/1511.05952)
 - episode_for_beta_one: the episode at which the beta value is set to 1.0
+
+Following network parameters are used:
+- 1 layer of GRU layer with 256 hidden states and tanh activation function
+- value network with 128 hidden states and a Relu activation function
+- advantage network with 128 hidden states and a Relu activation function
 
 For this report, I used a Recurrent Dueling Double DQN utilizing prioritized replay buffer with following hyperparameters.
