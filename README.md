@@ -22,6 +22,7 @@ I implemented few flavors of deep Q network and One can choose the type of netwo
 - Prioritized replay buffer (https://arxiv.org/abs/1511.05952)
 - Dueling DQN (https://arxiv.org/abs/1511.06581)
 - Recurrent DQN
+
 Pytorch is used as the machine learning library.
 
 
