@@ -16,13 +16,20 @@ The agent navigates the environmnet while eating yellow and blue bananas.
  
  The environment is considered as solved if the agent receives an average reward over 100 episodes of at least +13.
   
-### Getting started
+### getting started
 This project depends on Pytorch and Unity ML agents.
 - Pytorch: https://pytorch.org/
 - Unity ML agents: https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Installation.md
 - Udacity navigation environment: https://github.com/udacity/deep-reinforcement-learning/tree/master/p1_navigation
 
 **It is important to note that the agent provided by Udacity is only compatible with Unity ML agent version 0.4.0. It can be downloaded from https://github.com/Unity-Technologies/ml-agents/releases.**
+
+### instructions
+A train can be started by running training.py. The path and the executable of the environment should be passed in as the first argument.
+
+'''
+python training.py Banana_Windows_x86_64/Banana.exe
+'''
 
 
 
