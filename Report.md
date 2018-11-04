@@ -1,5 +1,5 @@
 ### learning Algorithm
-I implemented few flavors of deep Q network and One can choose the type of network through parameters while constructing the agent class. Following types of DQN are implemented
+I implemented few flavors of deep Q network and one can choose the type of network through parameters while constructing the agent class. Following types of DQN are implemented
 - Original Google Deepmind DQN (https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf)
 - Double DQN (https://arxiv.org/abs/1509.06461)
 - Prioritized replay buffer (https://arxiv.org/abs/1511.05952)
