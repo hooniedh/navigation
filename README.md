@@ -1,8 +1,8 @@
 # navigation
-This is my solution to Udicity reinfocement learning nanodegree **Navigation** project. Deep Q networks are used.
+This is my solution to Udacity reinforcement learning nanodegree **Navigation** project. Deep Q networks are used.
 ### environment
 The environment is provided by Udacity and it is made from the Unity ML agent (https://github.com/Unity-Technologies/ml-agents).
-The agent navigates the environmnet while eating yellow and blue bananas.
+The agent navigates the environment while eating yellow and blue bananas.
 - The environment returns 37 floats as the states in each step.
 - There are four actions available to the agent
   - 0: walk forward
@@ -25,7 +25,7 @@ This project depends on Pytorch and Unity ML agents.
 **It is important to note that the agent provided by Udacity is only compatible with Unity ML agent version 0.4.0. It can be downloaded from https://github.com/Unity-Technologies/ml-agents/releases.**
 
 ### instructions
-A train can be started by running training.py. The path and the executable of the environment should be passed in as the first argument.
+A train can be started by running training.py. The path and the executable of the environment should be passed in as the first argument. For example if the environment is Banana.exe (Windows executable) in the Banana_Windows_x86_64 directory, you can run the script like this
 
 ```
 python training.py Banana_Windows_x86_64/Banana.exe
