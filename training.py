@@ -3,6 +3,7 @@ import numpy as np
 from dqn_agent import *
 from collections import deque
 import matplotlib.pyplot as plt
+import sys
 
 
 def Train(env, agent, num_episodes=2000, eps_start=1.0, eps_end=0.01,
@@ -62,18 +63,21 @@ def plot(scores, file_name):
 
 
 if __name__ == '__main__':
-    env = UnityEnvironment(file_name="Banana_Windows_x86_64/Banana.exe")
-    brain_name = env.brain_names[0]
-    brain = env.brains[brain_name]
-    action_size = brain.vector_action_space_size
-    env_info = env.reset(train_mode=True)[brain_name]
-    state = env_info.vector_observations[0]
-    state_size = len(state)
-    agent = createAgent(state_size, action_size,
-                        0,                                  # random seed
-                        sequence_length=10,                 # sequence length for the recurrent DQN
-                        use_double_DQN=True,                # Double DQN
-                        use_dueling_network=True            # Dueling network
-                        )
-    print("start training....")
-    Train(env, agent)
+    if len(sys.argv) == 2:
+        env = UnityEnvironment(file_name=sys.argv[1])
+        brain_name = env.brain_names[0]
+        brain = env.brains[brain_name]
+        action_size = brain.vector_action_space_size
+        env_info = env.reset(train_mode=True)[brain_name]
+        state = env_info.vector_observations[0]
+        state_size = len(state)
+        agent = createAgent(state_size, action_size,
+                            0,                                  # random seed
+                            sequence_length=10,                 # sequence length for the recurrent DQN
+                            use_double_DQN=True,                # Double DQN
+                            use_dueling_network=True            # Dueling network
+                            )
+        print("start training....")
+        Train(env, agent)
+    else:
+        print("usage - python training.py path to the agent executable")
