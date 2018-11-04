@@ -50,7 +50,11 @@ Following network parameters are used (Recurrent Dueling Double DQN with a prior
 - lr: 5e-4
 - update_every: 4
 - update_target_network_every: 2500 (this is per learning step which is equivalent to 10000 action selection steps)
-alpha: 0.6
-sequence_length: 10
+- alpha: 0.6
+- sequence_length: 10
+
+### benchmark
+The agent was able to solve the environment (at least average +13 rewards over 100 episodes) at the episode 1100.
+
 
 
