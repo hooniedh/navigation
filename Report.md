@@ -56,5 +56,7 @@ Following network parameters are used (Recurrent Dueling Double DQN with a prior
 ### benchmark
 The agent was able to solve the environment (at least average +13 rewards over 100 episodes) at the episode 1100.
 
+![plot of the total rewards per episode](rewards.png)
+
 
 
