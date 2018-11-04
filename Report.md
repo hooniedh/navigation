@@ -37,5 +37,20 @@ Following network parameters are used (Recurrent Dueling Double DQN with a prior
 - advantage network with 128 hidden states and a Relu activation function
 
 ### hyperparameters
+num_episodes: 2000
+eps_start: 1.0
+eps_end: 0.01
+eps_decay: 0.995
+beta_start: 0.4
+episode_for_beta_one: 1500
+buffer_size: 300000
+batch_size: 64
+gamma: 0.99
+tau: 1.0
+lr: 5e-4
+update_every: 4
+update_target_network_every: 2500 (this is per learning step which is equivalent to 10000 action selection steps)
+alpha: 0.6
+sequence_length: 10
 
 
