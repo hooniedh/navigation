@@ -27,9 +27,9 @@ This project depends on Pytorch and Unity ML agents.
 ### instructions
 A train can be started by running training.py. The path and the executable of the environment should be passed in as the first argument.
 
-'''
+```
 python training.py Banana_Windows_x86_64/Banana.exe
-'''
+```
 
 
 
