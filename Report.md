@@ -58,7 +58,7 @@ The agent was able to solve the environment (at least average +13 rewards over 1
 
 ![plot of the total rewards per episode](rewards.png)
 
-### futureidea
+### future idea
 I like to try few other DQN types and technique to improve the performance
 - noisy DQN (https://arxiv.org/abs/1706.10295)
 - Distributed DQN (https://arxiv.org/abs/1707.06887)
